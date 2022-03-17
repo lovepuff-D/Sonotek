@@ -1,0 +1,500 @@
+@import "mygrid";
+@import "myreboot";
+//Подключение шрифта
+//@import "../fonts/Montserrat/stylesheet.css";
+@import "../fonts/Bebas Neue/bebasneue.css";
+//Подключение шрифта (Только bold)
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  //@include media-breakpoint-down(md) {
+  //font-size: 14px;
+  //}
+  
+  @include media-breakpoint-down(xl) {
+	font-size: 14px;
+  }
+  @include media-breakpoint-down(sm) {
+	font-size: 12px;
+  }
+}
+
+body {
+  font-family: Montserrat, arial;
+  font-weight: 500;
+  color: white;
+  line-height: normal;
+  overflow-x: hidden;
+  background-color: #ededed;
+  position: relative;
+}
+
+.container {
+  @include make-container();
+  max-width: 1450px;
+}
+
+.header-container {
+  @include make-container();
+  max-width: 1750px;
+}
+
+.my-row {
+  @include make-row();
+  margin-right: 0;
+  margin-left: 0;
+  
+  & > * {
+	@include make-col-ready();
+  }
+}
+
+//Переменные-------------------------------------------------------------------------
+
+$color-primary: #477942;
+$color-green-title: #437b3e;
+
+//Стили общих блоков-------------------------------------------------------------------
+
+.btn {
+  padding: 15px 20px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  background: $color-primary;
+  color: white;
+  transition: background-color .5s, color .5s;
+  
+  &:hover {
+	background-color: #2a7922;
+  }
+}
+
+a.btn-primary:hover {
+  color: rgba(255, 255, 255, .8);
+}
+
+.btn-secondary {
+  color: $color-green-title;
+  background-color: white;
+  height: 65px;
+  font-weight: 600;
+  transition: background-color .5s;
+  
+  &:hover {
+	background-color: #d8d8d8;
+  }
+}
+
+a.btn-secondary:hover {
+  color: $color-green-title;
+}
+
+.btn_sign-up {
+  border: none;
+  height: 65px;
+  background-color: transparent;
+  outline: 1px solid white;
+  color: white;
+}
+
+.title {
+  font-size: 5.125rem;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  @include media-breakpoint-down(mb) {
+	font-size: 4.125rem;
+  }
+}
+
+.title-green {
+  color: $color-green-title;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+datalist {
+  background: red;
+}
+
+.scale-item {
+  position: relative;
+  transition: transform .3s;
+  z-index: 1;
+  
+  &:hover {
+	z-index: 5;
+	transform: scale(1.2);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, .1);
+	
+	@include media-breakpoint-down(md) {
+	  transform: scale(1.05);
+	}
+  }
+}
+
+.btn-show-all {
+  display: none;
+}
+
+.btn__more-position {
+  @include media-breakpoint-down(md) {
+	position: absolute;
+	bottom: 25px;
+	max-width: 550px;
+	width: 100%;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  section {
+	text-align: center;
+  }
+}
+
+.fancybox-container {
+  
+  .fancybox-slide--html {
+	padding: 25px;
+  }
+  
+  .fancybox-content {
+	padding: 0;
+	max-width: 1450px;
+	width: 100% !important;
+	
+	.product-fancybox__row {
+	  @extend .my-row;
+	  justify-content: space-between;
+	  color: #414141;
+	  
+	  img {
+		padding-left: 0;
+		padding-right: 0;
+		//max-width: 800px;
+		//max-height: 730px;
+		@include make-col(8);
+		max-width: 100%;
+		height: auto;
+		
+		@include media-breakpoint-down(xl) {
+		  @include make-col(12);
+		}
+	  }
+	  
+	  .product-fancybox__text {
+		padding: 45px 25px 45px 15px;
+		@include make-col(4);
+		
+		.product-fancybox {
+		  &__name {
+			font-size: 2rem;
+			color: $color-green-title;
+			width: 50%;
+			margin-bottom: 25px;
+			font-weight: 700;
+		  }
+		  
+		  &__sub-amount {
+			font-size: 1.5rem;
+		  }
+		  
+		  &__amount {
+			width: 50%;
+			font-weight: 700;
+			font-size: 1.5rem;
+		  }
+		  
+		  &__subtitle {
+			font-size: 1.5rem;
+			margin-top: 30px;
+		  }
+		}
+		
+		.fancybox-main_main-text {
+		  border-bottom: 1px solid #dee2e6;
+		  padding-bottom: 15px;
+		  margin-bottom: 35px;
+		}
+		
+		.fancybox-sub_text {
+		  font-weight: 400;
+		  margin-bottom: 35px;
+		}
+		
+		form {
+		  input {
+			border: none;
+			border-bottom: 1px solid #e5e5e5;
+			border-radius: 1px;
+			padding: 17px;
+			display: block;
+			position: relative;
+			width: 100%;
+			margin-bottom: 30px;
+			background-color: transparent;
+			color: #000;
+			
+			&:focus {
+			  outline: none;
+			  box-shadow: 0px 2px 8px -5px #437b3e;
+			}
+		  }
+		  
+		  .personal-data {
+			font-size: 0.9rem;
+			font-weight: 400;
+			margin-bottom: 35px;
+		  }
+		  
+		  button {
+			width: 100%;
+		  }
+		}
+	  }
+	}
+	
+	.fancybox-button {
+	  background: $color-primary;
+	  width: 77px;
+	  height: 77px;
+	}
+	
+	@include media-breakpoint-down(xl) {
+	  max-width: 650px;
+	  
+	  .product-fancybox__row {
+		.product-fancybox__img {
+		  @include make-col(12);
+		}
+		
+		.product-fancybox__text {
+		  @include make-col(12);
+		}
+	  }
+	}
+	@include media-breakpoint-down(md) {
+	  .fancybox-button {
+		width: 55px;
+		height: 55px;
+		@include media-breakpoint-down(mb) {
+		  width: 42px;
+		  height: 42px;
+		}
+	  }
+	}
+  }
+  
+  #sign-up__modal {
+	max-width: 850px;
+	padding: 80px 35px;
+	
+	.call-back-fancybox__row {
+	  @extend .my-row;
+	  justify-content: space-between;
+	  color: #414141;
+	  position: relative;
+	  z-index: 5;
+	  
+	  #call-back__form {
+		@extend .my-row;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		
+		& > * {
+		  max-width: 100%;
+		  @include media-breakpoint-down(md) {
+			max-width: 100%;
+		  }
+		}
+		
+		.form__name {
+		  font-size: 2rem;
+		  margin-bottom: 15px;
+		  @include media-breakpoint-down(md) {
+			font-size: 1.5rem;
+		  }
+		}
+		.form__subtitle {
+		  color: #797979;
+		  font-size: 1.125rem;
+		  margin-bottom: 35px;
+		  @include media-breakpoint-down(md) {
+			font-size: 1.5rem;
+		  }
+		}
+		
+		input {
+		  border: none;
+		  border-bottom: 1px solid #e5e5e5;
+		  border-radius: 1px;
+		  padding: 17px;
+		  display: block;
+		  position: relative;
+		  width: 100%;
+		  margin-bottom: 30px;
+		  background-color: transparent;
+		  color: #000;
+		  
+		  &:focus {
+			outline: none;
+			box-shadow: 0px 2px 8px -5px #437b3e;
+		  }
+		}
+		
+		.personal-data {
+		  font-size: 0.9rem;
+		  font-weight: 400;
+		  margin-bottom: 35px;
+		}
+		
+		button {
+		  width: 100%;
+		}
+	  }
+	}
+  }
+  
+  #our-work__modal {
+	.our-work-modal__row {
+	  @extend .my-row;
+	  justify-content: space-between;
+	  color: #414141;
+	  
+	  img {
+		//max-width: 800px;
+		//max-height: 730px;
+		max-width: 100%;
+		height: auto;
+		padding-right: 0;
+		padding-left: 0;
+		@include make-col(7);
+		
+		@include media-breakpoint-down(xl) {
+		  @include make-col(12);
+		}
+	  }
+	  
+	  .our-work-modal__text {
+		padding: 45px 25px 45px 25px;
+		@include make-col(5);
+		
+		.our-work-modal__name {
+		  border-bottom: 1px solid #dee2e6;
+		  padding-bottom: 15px;
+		  margin-bottom: 35px;
+		  font-size: 2rem;
+		  color: $color-green-title;
+		  font-weight: 700;
+		  border-bottom: 1px solid #dee2e6;
+		}
+		
+		
+		.our-work-modal-sub_text {
+		  font-weight: 400;
+		  font-size: 1.125rem;
+		  
+		  & > p:not(:last-child) {
+			margin-bottom: 25px;
+		  }
+		}
+		
+		@include media-breakpoint-down(xl) {
+		  @include make-col(12);
+		}
+	  }
+	  
+	  @include media-breakpoint-down(xl) {
+		flex-direction: column;
+	  }
+	}
+  }
+  
+  #our-materials__modal {
+	.our-work-modal__row {
+	  @extend .my-row;
+	  justify-content: space-between;
+	  color: #414141;
+	  
+	  img {
+		//max-width: 800px;
+		//max-height: 730px;
+		max-width: 100%;
+		height: auto;
+		padding-right: 0;
+		padding-left: 0;
+		@include make-col(7);
+		
+		@include media-breakpoint-down(xl) {
+		  @include make-col(12);
+		}
+	  }
+	  
+	  .our-work-modal__text {
+		padding: 45px 25px 45px 25px;
+		@include make-col(5);
+		
+		.our-work-modal__name {
+		  border-bottom: 1px solid #dee2e6;
+		  padding-bottom: 15px;
+		  margin-bottom: 35px;
+		  font-size: 2rem;
+		  color: $color-green-title;
+		  font-weight: 700;
+		  border-bottom: 1px solid #dee2e6;
+		  
+		  @include media-breakpoint-down(mb) {
+			font-size: 1.5rem!important;
+		  }
+		}
+		
+		
+		.our-work-modal-sub_text {
+		  font-weight: 400;
+		  font-size: 1.125rem;
+		  
+		  & > p:not(:last-child) {
+			margin-bottom: 25px;
+		  }
+		}
+		
+		@include media-breakpoint-down(xl) {
+		  @include make-col(12);
+		}
+	  }
+	  
+	  @include media-breakpoint-down(xl) {
+		flex-direction: column;
+	  }
+	}
+  }
+}
+
+#mainContainer {
+  
+  padding:3rem 0 8rem 0;
+  background:white;
+  color:black;
+}
+
+#mainContainer h1 {
+  
+  margin-bottom: 2rem;
+  
+}
+
