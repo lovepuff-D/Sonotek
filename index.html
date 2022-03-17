@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сонотек</title>
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/common-styles.css">
+	<link rel="stylesheet" href="css/main-style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<section id="about-company" class="start-block">
+	<div class="header-container">
+		<header>
+			<div class="header__logo">
+				<img src="./img/start-block/header-logo.png" alt="Логотип компании">
+			</div>
+			<div class="header__navigation">
+				<a href="tel:+78432608855" class="btn btn-primary btn__callback"> +7 (843) 260-88-55</a>
+				<div class="nav-burger__btn">
+					<div class="burger-item burger-icon_top"></div>
+					<div class="burger-item burger-icon_middle"></div>
+					<div class="burger-item burger-icon_bottom"></div>
+				</div>
+			</div>
+			<nav>
+				<div class="nav">
+					<a href="#about-company" class="nav-link">О компании</a>
+					<a href="#sign-up" class="nav-link">Расчёт стоимости</a>
+					<a href="#about-team" class="nav-link">Схема работы</a>
+					<a href="#materials" class="nav-link">Каталог</a>
+					<a href="#product" class="nav-link">Готовые решения</a>
+					<a href="#our-work" class="nav-link">Портфолио</a>
+					<a href="#reviews" class="nav-link">Отзывы</a>
+					<a href="#blog" class="nav-link">Блог</a>
+					<a href="#footer" class="nav-link">Контакты</a>
+					<div class="contact">
+						<a href="#" class="nav-link link-address">г. Казань, ул. М. Миля, 63Б офис 223</a>
+						<a href="mailto:mail@sonotek.ru" class="nav-link">mail@sonotek.ru</a>
+						<div class="contact-social">
+							<a href="#"><img src="img/start-block/instagram.png" alt=""></a>
+							<a href="#"><img src="img/start-block/vk.png" alt=""></a>
+							<a href="#"><img src="img/start-block/youtube.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="bg-nav"></div>
+			</nav>
+		</header>
+	</div>
+	<div class="start-block__main-info">
+		<div class="container">
+			<div class="start-block__main-info_inner">
+				<p class="subtitle">Звукоизоляция и акустика помещений</p>
+				<p class="title h1">Быстро <span>спроектируем и смонтируем</span>
+					<br>
+					рабочую систему звукоизоляции</p>
+				<div class="button__wrapper">
+					<button class="btn btn-primary btn-calculate">Рассчитать смету</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="start-block__advantage_wrapper">
+		<div class="container">
+			<div class="advantage">
+				<p class="advantage__subtitle subtitle">Эффективное решение в рамках бюджета</p>
+				<div class="advantage__list">
+					<div class="advantage__list-item">
+						<span class="advantage-text">Результат или
+												вернем деньги</span>
+						<span class="advantage-icon adv-icon-1">
+						</span>
+					</div>
+					<div class="advantage__list-item">
+						<span class="advantage-text">Гарантия
+												до 50 лет</span>
+						<span class="advantage-icon adv-icon-2">
+						</span>
+					</div>
+					<div class="advantage__list-item">
+						<span class="advantage-text">Объекты ведут
+												инженеры</span>
+						<span class="advantage-icon adv-icon-3">
+						</span>
+					</div>
+				</div>
+				<div class="advantage__text_animated" id="radius">
+				</div>
+				<div class="circle-type__wrapper">
+					<img src="./img/start-block/circle-text-icon.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section><!--Изменения здесь-->
+<section id="about-team" class="our-team__wrapper">
+	<div class="container">
+		<div class="our-team">
+			<div class="our-team__info">
+				<p class="title title-green h2">команда</p>
+				<p class="subtitle">Всем привет!<br>
+					Мы команда Сонотек!</p>
+				<p class="our-team__info_about-us">
+					Мы занимаемся звукоизоляцией помещений, знаем
+					как эффективно избавиться от шума при минимальной
+					потере площади.
+					<br>
+					<br>
+					Поэтому если Вас беспокоят шумные соседи или
+					Вы задумались о звукоизоляции на этапе
+					ремонта, мы поможем Вам!
+				</p>
+			</div>
+			<div class="our-team__media">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/eX24fMnCL2g?controls=0"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="product" class="our-product__wrapper">
+	<div class="container">
+		<div class="our-product">
+			<div>
+				<p class="title h2">готовые решения</p>
+			</div>
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item" role="presentation">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+					   aria-controls="home" aria-selected="true">Стены</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="roof-tab" data-toggle="tab" href="#roof" role="tab" aria-controls="profile"
+					   aria-selected="false">Потолок</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="floor-tab" data-toggle="tab" href="#floor" role="tab"
+					   aria-controls="contact" aria-selected="false">Полы</a>
+				</li>
+				<li class="nav-item" role="presentation">
+					<a class="nav-link" id="partition-tab" data-toggle="tab" href="#partition" role="tab"
+					   aria-controls="contact" aria-selected="false">Перегородки</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+					<div class="tab__wrapper">
+						<div class="product-item">
+							<a href="#hidden" data-fancybox class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Премиум-М1</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="roof" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="tab__wrapper">
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+						<div class="product-item">
+							<a href="#" class="item__wrapper scale-item">
+								<img src="./img/our-product/img-product.jpg" alt="Товар">
+								<div class="product-text">
+									<p class="product-name">Слим П 2</p>
+									<p class="product-amount">от <span>2160</span> руб.</p>
+									<p class="product-subtitle">Бескаркасная система</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="floor" role="tabpanel" aria-labelledby="contact-tab">
+				</div>
+				<div class="tab-pane fade" id="partition" role="tabpanel" aria-labelledby="contact-tab">
+
+				</div>
+			</div>
+			<div style="display: none; width: 500px;" id="hidden">
+				<div class="product-fancybox__row">
+					<img src="./img/our-product/test.jpg" alt="">
+					<div class="product-fancybox__text">
+						<div class="fancybox-main_main-text">
+							<p class="product-fancybox__name">Слим П</p>
+							<p class="product-fancybox__sub-amount">Стоимость 1м<sup>2</sup></p>
+							<p class="product-fancybox__amount">от <span>2160</span> руб.</p>
+							<!--										<p class="product-fancybox__subtitle">Бескаркасная система</p></div>-->
+						</div>
+						<div class="fancybox-sub_text">
+							<div class="product-fancybox__other-info">
+								<p>Стоимость монтажа данной системы составляет от <span>800</span> руб.</p>
+								<br>
+								<p>Общая стоимость данного решения «под ключ» составляет от
+									<span>2960</span>
+									руб.</p>
+							</div>
+						</div>
+						<form action="" id="product-form">
+							<input type="text" id="product-form__input_name" data-required-field name="your-name"
+								   value=""
+								   size="40" class="" aria-required="true" aria-invalid="false"
+								   placeholder="Ваше имя*">
+							<input type="tel" id="product-form__input_phone" data-required-field name="your-phone"
+								   value=""
+								   size="40" class="" aria-required="true" aria-invalid="false"
+								   placeholder="Ваше телефон*">
+							<p class="personal-data">Нажимая кнопку, Вы даете согласие на обработку
+								персональных данных в соответствии с условиями, указанными по <a
+										href="/soglashenie/">ссылке</a></p>
+							<button type="submit" id="product-form_buy-product"
+									class="btn btn-primary btn-calculate">Рассчитать смету
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-secondary btn-show-all">Показать ещё</button>
+		</div>
+		<div class="our-product-popup">
+		</div>
+	</div>
+</section>
+<section id="sign-up" class="sign-up__wrapper">
+	<div class="container">
+		<div class="sign-up">
+			<div class="title__wrapper">
+				<p class="title h2">Запишитесь <br> на замер</p>
+			</div>
+			<div class="subtitle__wrapper">
+				<p class="subtitle">Оставьте заявку, и мы составим <br>
+					подробную смету на ремонтные работы</p>
+			</div>
+			<form action="">
+				<div class="col__wrapper">
+					<input type="text" class="btn_sign-up" placeholder="Выберите месяц"
+						   list="defaultMouth">
+				</div>
+				<div class="col__wrapper">
+					<input type="number" class="btn_sign-up" placeholder="Выберите день"
+						   list="defaultDay">
+				</div>
+				<div class="col__wrapper">
+					<input type="text" class="btn_sign-up" placeholder="Выберите время" min="09:00" max="21:00"
+						   list="defaultHours">
+				</div>
+				<div class="col__wrapper">
+					<button type="submit" class="btn btn-secondary">Записаться</button>
+				</div>
+			</form>
+			<div class="datalist">
+				<div class="datalist">
+					<datalist id="defaultMouth">
+						<option value="Январь"></option>
+						<option value="Февраль"></option>
+						<option value="Март"></option>
+						<option value="Апрель"></option>
+						<option value="Май"></option>
+						<option value="Июнь"></option>
+						<option value="Июль"></option>
+						<option value="Август"></option>
+						<option value="Сентябрь"></option>
+						<option value="Октябрь"></option>
+						<option value="Ноябрь"></option>
+						<option value="Декабрь"></option>
+					</datalist>
+					<datalist id="defaultDay">
+						<option value="1"></option>
+						<option value="2"></option>
+						<option value="3"></option>
+						<option value="4"></option>
+						<option value="5"></option>
+						<option value="6"></option>
+						<option value="7"></option>
+						<option value="8"></option>
+						<option value="9"></option>
+						<option value="10"></option>
+						<option value="11"></option>
+						<option value="12"></option>
+						<option value="13"></option>
+						<option value="14"></option>
+						<option value="15"></option>
+						<option value="16"></option>
+						<option value="17"></option>
+						<option value="18"></option>
+						<option value="19"></option>
+						<option value="20"></option>
+						<option value="21"></option>
+						<option value="22"></option>
+						<option value="23"></option>
+						<option value="24"></option>
+						<option value="25"></option>
+						<option value="26"></option>
+						<option value="27"></option>
+						<option value="29"></option>
+						<option value="30"></option>
+						<option value="31"></option>
+					</datalist>
+					<datalist id="defaultHours">
+						<option value="09:00"></option>
+						<option value="10:00"></option>
+						<option value="11:00"></option>
+						<option value="12:00"></option>
+						<option value="13:00"></option>
+						<option value="14:00"></option>
+						<option value="15:00"></option>
+						<option value="16:00"></option>
+						<option value="17:00"></option>
+						<option value="18:00"></option>
+						<option value="19:00"></option>
+						<option value="20:00"></option>
+						<option value="21:00"></option>
+					</datalist>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="materials" class="our-materials__wrapper">
+	<div class="container">
+		<div class="our-materials">
+			<div class="bootstrap__wrapper our-materials__title">
+				<p class="title h2 title-green">товары</p>
+			</div>
+			<div class="materials-list">
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/1.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/2.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							мембраны
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/3.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукопоглощающие
+							плиты
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/4.jpg" alt="Товар">
+						<div class="materials-text">
+							Рулонные
+							материалы
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/5.jpg" alt="Товар">
+						<div class="materials-text">
+							Виброподвесы
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/6.jpg" alt="Товар">
+						<div class="materials-text">
+							Демпферные
+							ленты
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/7.jpg" alt="Товар">
+						<div class="materials-text">
+							Дополнительные
+							материалы
+						</div>
+					</div>
+				</a>
+				<a href="./materials.html" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/8.jpg" alt="Товар">
+						<div class="materials-text">
+							Общестроительные
+							материалы
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="call-back" class="call-back__wrapper">
+	<div class="container">
+		<div class="call-back">
+			<div class="bootstrap__wrapper">
+				<p class="title h2">Не нашли нужную <br>
+					информацию?</p>
+				<p class="subtitle">Заполните <u>форму</u> и наши специалисты <br>
+					свяжуться с вами!</p>
+				<a href="#sign-up__modal" data-fancybox type="submit" class="btn btn-secondary">Заказать обратный
+					звонок</a>
+				<p class="title h2">смотрите нас на youtube</p>
+				<div style="display: none; width: 500px;" id="sign-up__modal">
+					<div class="call-back-fancybox__row">
+						<form action="" id="call-back__form">
+							<p class="form__name">Заказать обратный звонок</p>
+							<p class="form__subtitle">Заполните форму и мы перезвоним вам</p>
+							<!--Атрибут data-required-field - отвечает за обязательность заполнения поля-->
+							<input type="text" id="call-back__input_name" data-required-field name="your-name" value=""
+								   size="40" class="" aria-required="true" aria-invalid="false"
+								   placeholder="Ваше имя*">
+							<input type="tel" id="call-back_input_phone" data-required-field name="your-phone" value=""
+								   size="40" class="" aria-required="true" aria-invalid="false"
+								   placeholder="Ваше телефон*">
+							<p class="personal-data">Нажимая кнопку, Вы даете согласие на обработку
+								персональных данных в соответствии с условиями, указанными по <a
+										href="/soglashenie/">ссылке</a></p>
+							<button type="submit" id="call-back-form_buy-product"
+									class="btn btn-primary btn-calculate">Отправить
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="our-work" class="our-work__wrapper">
+	<div class="container">
+		<div class="our-work">
+			<div class="bootstrap__wrapper">
+				<p class="title title-green h2">наши работы</p>
+				<div class="slider-arrows">
+					<button class="arrow-item slider-left"></button>
+					<button class="arrow-item slider-right"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider">
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/1.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/2.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/3.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/1.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/2.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+		<a href="#our-work__modal" data-fancybox class="slider-item scale-item">
+			<img src="./img/our-work/3.jpg" alt="">
+			<p>ЖК “Арт-Сити”</p>
+			<button class="btn btn-primary">Подробнее</button>
+		</a>
+	</div>
+	<div style="display: none; width: 500px;" id="our-work__modal" class="our-work-modal">
+		<div class="our-work-modal__row">
+			<img src="./img/our-work/1.jpg" alt="">
+			<div class="our-work-modal__text">
+				<div class="our-work-modal__name">
+					<p>ЖК “Арт-Сити”</p>
+				</div>
+				<div class="our-work-modal-sub_text">
+					<p><b>Местоположение: </b> г.Казань</p>
+					<p><b>Объект: </b> квартира на этапе ремонта</p>
+					<p><b>Проблема:</b> за стеной слышен шум, вызванный работой стиральной машины. Необходимость
+						звукоизоляции подкрепляется тем фактом, что источник шума граничит со спальней и часто беспокоил
+						семью заказчика в позднее время.</p>
+					<p><b>Решение:</b> установка каркасной звукоизоляционной системы "Стандарт П" на основе панелей с
+						мелкодисперсным наполнителем. Шумоизоляция розеток путем установки в систему звукоизоляционных
+						подрозетников с целью исключить возможные уязвимости.</p>
+					<p><b>Снижение шума: </b> до 62 дБ</p>
+					<p><b>Цена: </b> от 3090 руб за м<sup>2</sup></p>
+					<p><b>Толщина: </b> от 30 мм</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="reviews" class="reviews__wrapper">
+	<div class="container">
+		<div class="reviews">
+			<div class="bootstrap__wrapper title__wrapper">
+				<p class="title h2">Отзывы</p>
+				<a href="#" class="btn btn-secondary btn__more-position">Больше отзывов</a>
+			</div>
+			<div class="bootstrap__wrapper comment_block">
+				<div class="bootstrap__wrapper">
+					<div class="comment_block-item">
+						<div class="person">
+							<img src="./img/reviews/person-photo.jpg" alt="">
+							<div class="person__text">
+								<div>
+									<span class="first-name">Ренат</span>
+									<span class="last-name">Сафин</span>
+								</div>
+								<div>
+									г. Казань
+								</div>
+							</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+						</p>
+					</div>
+				</div>
+				<div class="bootstrap__wrapper">
+					<div class="comment_block-item">
+						<div class="person">
+							<img src="./img/reviews/person-photo.jpg" alt="">
+							<div class="person__text">
+								<div>
+									<span class="first-name">Ренат</span>
+									<span class="last-name">Сафин</span>
+								</div>
+								<div>
+									г. Казань
+								</div>
+							</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+						</p>
+					</div>
+				</div>
+				<div class="bootstrap__wrapper">
+					<div class="comment_block-item">
+						<div class="person">
+							<img src="./img/reviews/person-photo.jpg" alt="">
+							<div class="person__text">
+								<div>
+									<span class="first-name">Ренат</span>
+									<span class="last-name">Сафин</span>
+								</div>
+								<div>
+									г. Казань
+								</div>
+							</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+							been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+							galley of type and scrambled it to make a type specimen book. It has survived not only five
+							centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="instagram">
+			<div class="bootstrap__wrapper title__wrapper">
+				<p class="title h2">Мы в Instagram</p>
+				<a href="https://www.instagram.com/accounts/login/?next=%2Fsonotek.ru%2F&source=follow"
+				   class="btn btn-secondary btn__more-position">Подписаться</a>
+			</div>
+			<div class="bootstrap__wrapper instagram_block">
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/1.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/2.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/3.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/4.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/1.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/2.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/3.jpg" alt="">
+				</a>
+				<a href="#" class="instagram_block-item scale-item">
+					<img src="./img/reviews/4.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="blog" class="blog__wrapper">
+	<div class="container">
+		<div class="blog-header">
+			<div class="blog-header_title title__wrapper">
+				<p class="title title-green h2">Наш блог</p>
+				<a href="#" class="btn btn-secondary btn__more-position">Ко всем записям блога</a>
+			</div>
+		</div>
+		<div class="blog-content">
+			<div class="blog-content_item">
+				<a href="#" class="blog-content_item-element item-1 scale-item">
+					<img src="img/blog/1.png" alt="">
+					<p>Что такое
+						звукоизоляция
+						и как это работает?</p>
+				</a>
+			</div>
+			<div class="blog-content_item">
+				<a href="#" class="blog-content_item-element item-2 scale-item">
+					<img src="img/blog/2.png" alt="">
+					<p>ТОП 10 часто
+						задаваемых вопросов
+						о звукоизоляции</p>
+				</a>
+			</div>
+			<div class="blog-content_item">
+				<a href="#" class="blog-content_item-element item-3 scale-item">
+					<img src="img/blog/3.png" alt="">
+					<p>Качественная
+						звукоизоляция
+						помещения.
+						<br>
+						<br>
+						Почему в
+						современных домах
+						плохая шумоизоляция?</p>
+				</a>
+			</div>
+			<div class="blog-content_item">
+				<a href="#" class="blog-content_item-element item-4 scale-item">
+					<img src="img/blog/4.png" alt="">
+					<p>Звуaкоизоляция
+						и шумоизоляция.
+						<br>
+						<br>
+						Как обезопасить
+						свое здоровье
+						от негативного
+						влияния шума?</p>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="footer" class="footer__wrapper">
+	<div class="container">
+		<div class="footer__social-block social-block">
+			<div class="social-block__text">Подписывайтесь <br>
+				на наши соцсети!
+			</div>
+			<div class="social-block__instagram">
+				<a href="#" class="social-block__instagram-element btn btn-secondary">
+					Instagram
+				</a>
+			</div>
+			<div class="social-block__vk">
+				<a href="#" class="social-block__vk-element btn btn-secondary">
+					VK
+				</a>
+			</div>
+			<div class="social-block__youtube">
+				<a href="#" class="social-block__youtube-element btn btn-secondary">
+					YouTube
+				</a>
+			</div>
+		</div>
+		<div class="footer__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A93f9713276e7b7e0df6d562c5ce0c91675a2226c753fafdc57f02de6976c81f2&amp;source=constructor"
+					width="100%" height="400" frameborder="0"></iframe>
+			<!--			<script>-->
+			<!--				function counter(event) {-->
+			<!--                var element   = event.target;         // DOM element, in this example .owl-carousel-->
+			<!--                var items     = event.item.count;     // Number of items-->
+			<!--                var item      = event.item.index - 1;     // Position of the current item-->
+
+			<!--                // it loop is true then reset counter from 1-->
+			<!--                if(item > items) {-->
+			<!--                    item = item - items-->
+			<!--                }-->
+			<!--                jQuery('#counter').html("<span>"+item+"</span> / "+items)-->
+			<!--            }-->
+
+			<!--            // This example adds a marker to indicate the position of Bondi Beach in Sydney,-->
+			<!--            // Australia.55°46'10.8 49°12'25.7-->
+			<!--            function initMap() {-->
+			<!--                var map = new google.maps.Map(document.getElementById('map'), {-->
+			<!--                    zoom: 15,-->
+			<!--                    center: {lat: 55.769717, lng: 49.207183}-->
+			<!--                });-->
+
+			<!--                var image = './img/footer/pin-map.png';-->
+			<!--                var beachMarker = new google.maps.Marker({-->
+			<!--                    position: {lat: 55.769717, lng: 49.207183},-->
+			<!--                    map: map,-->
+			<!--                    icon: image-->
+			<!--                });-->
+			<!--            }</script>-->
+			<!--			<div id="map" style="height: 500px">-->
+
+			<!--			</div>-->
+			<!--			<script async="" defer-->
+			<!--					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRPGBuOC0HoHB6oEjl5nq7b-XhYmeON20&amp;callback=initMap"></script>-->
+		</div>
+		<div class="footer__other-info other-info">
+			<div class="other-info__logo other-info__col">
+				<img src="./img/start-block/header-logo.png" alt="Логотип компании">
+			</div>
+			<div class="other-info__address other-info__col">
+				<a href="#" class="nav-link">г. Казань, ул. М. Миля, 63Б офис 223</a>
+			</div>
+			<div class="other-info__mail other-info__col">
+				<a href="mailto:mail@sonotek.ru" class="nav-link">mail@sonotek.ru</a>
+			</div>
+			<div class="other-info__social-link other-info__col">
+				<div class="contact-social">
+					<a href="#"><img src="img/start-block/instagram.png" alt=""></a>
+					<a href="#"><img src="img/start-block/vk.png" alt=""></a>
+					<a href="#"><img src="img/start-block/youtube.png" alt=""></a>
+				</div>
+			</div>
+			<div class="other-info__number other-info__col">
+				<a href="tel:+78432608855" class="btn btn-secondary btn-footer"> +7 (843) 260-88-55</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+</script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</body>
+</html>

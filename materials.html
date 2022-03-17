@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Сонотек</title>
+	<link rel="stylesheet" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" href="css/common-styles.css">
+	<link rel="stylesheet" href="css/materials.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<section id="materials" class="our-materials__wrapper">
+	<div class="container">
+		<div class="our-materials">
+			<div class="bootstrap__wrapper our-materials__title">
+				<p class="title h2 title-green">товары</p>
+				<a href="index.html" class="btn btn-secondary btn__more-position">Назад</a>
+			</div>
+			<div class="materials-list">
+				<a href="#our-materials__modal" data-fancybox class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/1.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/2.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/3.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/4.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/5.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/6.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/7.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+				<a href="#" class="materials-item">
+					<div class="item__wrapper scale-item">
+						<img src="./img/our-materials/8.jpg" alt="Товар">
+						<div class="materials-text">
+							Звукоизоляционные
+							плиты
+						</div>
+						<div class="materials-amount">1000 ₽</div>
+						<button class="materials-about btn btn-primary">
+							Описание
+						</button>
+					</div>
+				</a>
+			</div>
+			<div style="display: none; width: 500px;" id="our-materials__modal" class="our-work-modal">
+				<div class="our-work-modal__row">
+					<div class="our-work-modal__text">
+						<div class="our-work-modal__name">
+							<p>Звукоизоляционные <br> плиты</p>
+						</div>
+						<div class="our-work-modal-sub_text">
+							<div><b>Описание: </b> Массивная звукоизолирующая панель, состоящая из армированного
+								высокоплотного гипсокартонного листа и вязкоэластичной упругой мембраны.
+							</div>
+							<ul>
+								<li>Размер:&nbsp;1200*500*17 мм </li>
+								<li>Площадь:&nbsp;0,6м2</li>
+								<li>Вес:&nbsp;17 кг</li>
+								<li>Индекс звукоизоляции воздушного шума Rw: 43 Дб</li>
+							</ul>
+							<p>Состав: Гипсокартон повышенной плотности. Упругая вязкоэластичная полимерно-минеральная
+								мембрана. Нетканая перфорированная оболочка. </p>
+						</div>
+						<div id="sign-up__modal">
+							<div class="call-back-fancybox__row">
+								<form action="" id="call-back__form">
+									<!--Атрибут data-required-field - отвечает за обязательность заполнения поля-->
+									<input type="text" id="call-back__input_name" data-required-field name="your-name"
+										   value=""
+										   size="40" class="" aria-required="true" aria-invalid="false"
+										   placeholder="Ваше имя*">
+									<input type="tel" id="call-back_input_phone" data-required-field name="your-phone"
+										   value=""
+										   size="40" class="" aria-required="true" aria-invalid="false"
+										   placeholder="Ваше телефон*">
+									<p class="personal-data">Нажимая кнопку, Вы даете согласие на обработку
+										персональных данных в соответствии с условиями, указанными по <a
+												href="/soglashenie/">ссылке</a></p>
+									<button type="submit" id="call-back-form_buy-product"
+											class="btn btn-primary btn-calculate">Купить
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<footer id="footer" class="footer__wrapper">
+	<div class="container">
+		<div class="footer__social-block social-block">
+			<div class="social-block__text">Подписывайтесь <br>
+				на наши соцсети!
+			</div>
+			<div class="social-block__instagram">
+				<a href="#" class="social-block__instagram-element btn btn-secondary">
+					Instagram
+				</a>
+			</div>
+			<div class="social-block__vk">
+				<a href="#" class="social-block__vk-element btn btn-secondary">
+					VK
+				</a>
+			</div>
+			<div class="social-block__youtube">
+				<a href="#" class="social-block__youtube-element btn btn-secondary">
+					YouTube
+				</a>
+			</div>
+		</div>
+		<div class="footer__map">
+			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A93f9713276e7b7e0df6d562c5ce0c91675a2226c753fafdc57f02de6976c81f2&amp;source=constructor"
+					width="100%" height="400" frameborder="0"></iframe>
+			<!--			<script>-->
+			<!--				function counter(event) {-->
+			<!--                var element   = event.target;         // DOM element, in this example .owl-carousel-->
+			<!--                var items     = event.item.count;     // Number of items-->
+			<!--                var item      = event.item.index - 1;     // Position of the current item-->
+
+			<!--                // it loop is true then reset counter from 1-->
+			<!--                if(item > items) {-->
+			<!--                    item = item - items-->
+			<!--                }-->
+			<!--                jQuery('#counter').html("<span>"+item+"</span> / "+items)-->
+			<!--            }-->
+
+			<!--            // This example adds a marker to indicate the position of Bondi Beach in Sydney,-->
+			<!--            // Australia.55°46'10.8 49°12'25.7-->
+			<!--            function initMap() {-->
+			<!--                var map = new google.maps.Map(document.getElementById('map'), {-->
+			<!--                    zoom: 15,-->
+			<!--                    center: {lat: 55.769717, lng: 49.207183}-->
+			<!--                });-->
+
+			<!--                var image = './img/footer/pin-map.png';-->
+			<!--                var beachMarker = new google.maps.Marker({-->
+			<!--                    position: {lat: 55.769717, lng: 49.207183},-->
+			<!--                    map: map,-->
+			<!--                    icon: image-->
+			<!--                });-->
+			<!--            }</script>-->
+			<!--			<div id="map" style="height: 500px">-->
+
+			<!--			</div>-->
+			<!--			<script async="" defer-->
+			<!--					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRPGBuOC0HoHB6oEjl5nq7b-XhYmeON20&amp;callback=initMap"></script>-->
+		</div>
+		<div class="footer__other-info other-info">
+			<div class="other-info__logo other-info__col">
+				<img src="./img/start-block/header-logo.png" alt="Логотип компании">
+			</div>
+			<div class="other-info__address other-info__col">
+				<a href="#" class="nav-link">г. Казань, ул. М. Миля, 63Б офис 223</a>
+			</div>
+			<div class="other-info__mail other-info__col">
+				<a href="mailto:mail@sonotek.ru" class="nav-link">mail@sonotek.ru</a>
+			</div>
+			<div class="other-info__social-link other-info__col">
+				<div class="contact-social">
+					<a href="#"><img src="img/start-block/instagram.png" alt=""></a>
+					<a href="#"><img src="img/start-block/vk.png" alt=""></a>
+					<a href="#"><img src="img/start-block/youtube.png" alt=""></a>
+				</div>
+			</div>
+			<div class="other-info__number other-info__col">
+				<a href="tel:+78432608855" class="btn btn-secondary btn-footer"> +7 (843) 260-88-55</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+</script>
+<script defer src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+		integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+		crossorigin="anonymous"></script>
+<script src="materials.js"></script>
+</body>
+</html>
